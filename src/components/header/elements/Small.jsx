@@ -23,12 +23,12 @@ const SmallScreen = () => {
         {/* Right Section - Sign In and Cart */}
         <div className="flex items-center space-x-4">
           {/* Sign In */}
-          <button className="text-xl flex items-center bg-orange-500 text-white rounded-full">
-            <p className="px-3">Sign in </p>
+          <button className="text-xl flex items-center bg-orange-500 rounded-full">
+            <p className="pl-4 pr-3 text-white">Sign in </p>
             <Image src="/assets/icons/usericon.svg"
-            className="text-2xl bg-gray-800 text-white px-2 py-1 rounded-full"
-            width={23}
-            height={23}
+            className="text-2xl bg-gray-800 p-2 rounded-full text-gray-800"
+            width={35}
+            height={35}
             color="white"
             alt="User Icon" />
           </button>
@@ -52,9 +52,9 @@ const SmallScreen = () => {
         <input
           type="text"
           placeholder="Search GV Mall"
-          className="border-l border-b border-t border-gray-400 w-full py-2 px-3 rounded-l-md focus:outline-none bg-white placeholder:text-gray-600 text-gray-900"
+          className="border-l border-b border-t border-gray-300 w-full py-2 px-3 rounded-l-md focus:outline-none bg-white placeholder:text-gray-500 text-gray-900"
         />
-        <button className="bg-orange-500 font-bold p-1 border border-gray-400 rounded-r-md">
+        <button className="bg-orange-500 font-bold p-1 border border-gray-300 rounded-r-md">
           <Image 
           src='assets/icons/searchicon.svg'
           className="px-2 py-1 text-2xl text-gray-900"
