@@ -10,8 +10,8 @@ const SmallScreen = () => {
           <button className="text-gray-800 text-4xl ">
             <Image src="/assets/icons/menu.svg"
              alt="Menu Image"
-             width={23}
-             height={23}/>
+             width={33}
+             height={33}/>
           </button>
 
           {/* Logo */}
@@ -35,10 +35,9 @@ const SmallScreen = () => {
 
           {/* Cart Icon */}
           <div className="relative text-gray-800">
-            <i class="bi bi-cart-fill text-2xl rounded-full"></i>
             <Image src="assets/icons/cart.svg" 
-            height={25}
-            width={25}
+            height={30}
+            width={30}
             alt="Cart Icon"/>
             <span className="text-white absolute top-0 -right-2 bg-red-500 text-xs rounded-full px-1">
               2
