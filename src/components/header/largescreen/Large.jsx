@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 const LargeScreen = () => {
   return (
-    <div className="bg-gray-100 text-white hidden lg:block fixed w-full">
+    <div className="bg-gray-100 shadow-xl text-gray-800 hidden lg:block fixed w-full">
       <Menu />
       <TopNav />
     </div>
