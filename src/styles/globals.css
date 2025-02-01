@@ -28,3 +28,7 @@ body {
   -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
+
+.smallline-height{
+  line-height: 0.5 !important;
+}

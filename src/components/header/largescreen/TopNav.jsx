@@ -1,85 +1,94 @@
-import React from 'react'
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/image"
 
-const TopNav = () => {
+const Menu = () => {
   return (
-  <div className="bg-white py-3 px-10">
-    <div className="container mx-auto flex justify-between items-center">
-        <button>
-            Shop By Category
-        </button>
-        {/* Logo */}
-        <div className="flex items-center font-bold mr-10">
-            <Image src='/assets/fav.png' width={37} height={37} alt='Stora Logo'/>
-            {/* <img src={StoraLogo} className="w-50" alt="" /> */}
-        </div>
+    <nav className="bg-white py-5 px-8 border-b border-gray-300">
+        <div className="grid grid-cols-10 gap-4 items-center">
 
-        {/* Navigation Links */}
-        <ul className="text-gray-900 flex space-x-6 text-sm ">
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            HOME
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            FEATURES
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            BEST SELLING
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            DEAL
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            SHOP
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            BLOG
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            PAGES
-            </a>
-        </li>
-        </ul>
+            {/* Company Icons */}
+            <div className="flex gap-3 mr-10 items-center col-span-2">
+                <Image 
+                src='/assets/fav.png'
+                width={35}
+                height={35}
+                alt='Logo' />
+                <h1 className="text-xl font-bold">GV Mall</h1>
+            </div>
 
-        {/* Utility Icons */}
-        <div className="flex space-x-4 items-center text-gray-900">
-        <a
-            href="#"
-            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
-        >
-            <i className="bi bi-person"></i> Login or Register
-        </a>
-        <span>|</span>
-        <a
-            href="#"
-            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
-        >
-            <i class="bi bi-truck"></i> Track Your Order
-        </a>
-        <span>|</span>
-        <a
-            href="#"
-            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
-        >
-            <i class="bi bi-mic-fill"></i> Hotline (+123) 813 822 8089
-        </a>
+            {/* Search Bar */}
+            <div className="col-span-4 flex items-center">
+
+                <div className="flex flex-grow items-center bg-gray-200 rounded-sm">
+                    <div className="bg-gray-200 text-gray-800 px-6 flex items-center rounded-sm">
+                        <select className="border-none text-sm font-medium bg-gray-200">
+                            <option value="" className='bg-gray-200'>
+                                ALL CATEGORY
+                            </option>
+                            <option value="" className="bg-gray-200">
+                                Kithen Utensils
+                            </option>
+                            <option value="" className="bg-gray-200">
+                                Euro
+                            </option>
+                            <option value="" className="bg-gray-200">
+                                Pounds
+                            </option>
+                        </select>
+                    </div>
+                    <span className="border h-5 border-gray-400"></span>
+                    <input
+                    type="text"
+                    placeholder="Enter your keyword..."
+                    className="w-full px-3 py-3 border-l text-sm text-gray-800 bg-gray-200 focus:outline-none rounded-sm"
+                    />
+                    <button className="bg-gray-200 px-4 text-gray-800 rounded-r hover:bg-lime-500">
+                        <Image 
+                        src='/assets/icons/searchicon.svg'
+                        width={25}
+                        height={25}
+                        className="py-3"
+                        alt="Search Icon glass" />
+                    </button>
+                </div>
+            </div>
+
+            {/* customer Service */}
+            <div className="col-span-2">
+
+            </div>
+
+            {/* Utility Icons */}
+            <div className="col-span-2 flex justify-evenly items-center text-xl text-gray-900">
+                <button>
+                    <Image 
+                    src='/assets/icons/usericon.svg'
+                    width={30}
+                    height={30}
+                    alt="User Icon" />
+                </button>
+                <button>
+                    <i class="bi bi-heart-fill"></i>
+                </button>
+                <a href="#" className="flex gap-2 items-center">
+                    <div className="relative hover:text-red-500">
+                    <Image 
+                    src='/assets/icons/cart.svg'
+                    width={30}
+                    height={30}
+                    alt="File Icon"/>
+                    <span className="absolute top-0 -right-2 bg-red-500 text-xs rounded-full px-1">
+                        2
+                    </span>
+                    </div>
+                    <div className="smallline-height">
+                        <h2 className="text-xs text-gray-500 m-0 p-0">Your Cart</h2>
+                        <span className="text-lg p-0 m-0 text-gray-800 font-bold">$ 202,300.00</span>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-  </div>
+    </nav>
   )
 }
 
-export default TopNav
+export default Menu

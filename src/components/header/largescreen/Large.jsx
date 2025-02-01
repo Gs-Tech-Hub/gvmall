@@ -1,6 +1,6 @@
 import React from "react";
-import TopNav from "./TopNav";
-import Menu from "./Menu";
+import TopNav from "./Menu";
+import Menu from "./TopNav";
 
 const LargeScreen = () => {
   return (

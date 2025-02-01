@@ -1,62 +1,85 @@
 import React from 'react'
+import Link from 'next/link';
+import Image from 'next/image';
 
-const Menu = () => {
+const TopNav = () => {
   return (
-    <nav className="bg-white py-3 px-8 border-t border-gray-900">
-        <div className="grid grid-cols-10 gap-4 items-center">
-            {/* Search Bar */}
-            <div className="col-span-8 flex items-center gap-4">
-            <div className="bg-orange-400 text-gray-800 px-2 flex items-center rounded-sm">
-                <i class="bi bi-card-list"></i>
-                <select className="text-gray-900 border-none">
-                <option value="" className="bg-gray-200">
-                    Naira
-                </option>
-                <option value="" className="bg-gray-200">
-                    Dollar
-                </option>
-                <option value="" className="bg-gray-200">
-                    Euro
-                </option>
-                <option value="" className="bg-gray-200">
-                    Pounds
-                </option>
-                </select>
-            </div>
-            <div className="flex flex-grow bg-white rounded-sm">
-                <input
-                type="text"
-                placeholder="Enter your keyword..."
-                className="w-full px-3 py-2 text-sm text-gray-800 bg-gray-200 focus:outline-none rounded-sm"
-                />
-                <button className="bg-orange-400 px-4 py-2 text-gray-800 rounded-r hover:bg-lime-500">
-                <i className="fas fa-search"></i> Search
-                </button>
-            </div>
-            </div>
-
-            {/* Utility Icons */}
-            <div className="col-span-2 flex justify-evenly items-center text-xl text-gray-900">
-            <button>
-                <i class="bi bi-arrow-clockwise"></i>
-            </button>
-            <button>
-                <i class="bi bi-heart-fill"></i>
-            </button>
-            <a href="#" className="flex gap-2 items-center">
-                <div className="relative hover:text-red-500">
-                <i class="bi bi-cart-fill bg-orange-400 px-2 py-1 text-gray-700 rounded-full"></i>
-                <span className="absolute top-0 -right-2 bg-red-500 text-xs rounded-full px-1">
-                    2
-                </span>
-                </div>
-                <h2 className="text-lg"> My Cart</h2>
-                <span className="text-sm text-orange-500">| $ 202,300</span>
-            </a>
-            </div>
+  <div className="bg-white py-3 px-10">
+    <div className="container mx-auto flex justify-between items-center">
+        <button>
+            Shop By Category
+        </button>
+        {/* Logo */}
+        <div className="flex items-center font-bold mr-10">
+            <Image src='/assets/fav.png' width={37} height={37} alt='Stora Logo'/>
+            {/* <img src={StoraLogo} className="w-50" alt="" /> */}
         </div>
-    </nav>
+
+        {/* Navigation Links */}
+        <ul className="text-gray-900 flex space-x-6 text-sm ">
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            HOME
+            </a>
+        </li>
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            FEATURES
+            </a>
+        </li>
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            BEST SELLING
+            </a>
+        </li>
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            DEAL
+            </a>
+        </li>
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            SHOP
+            </a>
+        </li>
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            BLOG
+            </a>
+        </li>
+        <li>
+            <a href="#" className="hover:text-yellow-500">
+            PAGES
+            </a>
+        </li>
+        </ul>
+
+        {/* Utility Icons */}
+        <div className="flex space-x-4 items-center text-gray-900">
+        <a
+            href="#"
+            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
+        >
+            <i className="bi bi-person"></i> Login or Register
+        </a>
+        <span>|</span>
+        <a
+            href="#"
+            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
+        >
+            <i class="bi bi-truck"></i> Track Your Order
+        </a>
+        <span>|</span>
+        <a
+            href="#"
+            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
+        >
+            <i class="bi bi-mic-fill"></i> Hotline (+123) 813 822 8089
+        </a>
+        </div>
+    </div>
+  </div>
   )
 }
 
-export default Menu
+export default TopNav
