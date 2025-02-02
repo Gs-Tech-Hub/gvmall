@@ -6,77 +6,121 @@ const TopNav = () => {
   return (
   <div className="bg-white py-3 px-10">
     <div className="container mx-auto flex justify-between items-center">
-        <button>
-            Shop By Category
+        <button className='flex px-4 py-2 rounded items-center gap-2 bg-orange-500'>
+            <Image 
+            src='assets/icons/category.svg'
+            width={20}
+            height={20}
+            alt='Category Icon' />
+            <h2 className='text-sm'>SHOP BY CATEGORY</h2>          
         </button>
-        {/* Logo */}
-        <div className="flex items-center font-bold mr-10">
-            <Image src='/assets/fav.png' width={37} height={37} alt='Stora Logo'/>
-            {/* <img src={StoraLogo} className="w-50" alt="" /> */}
-        </div>
 
         {/* Navigation Links */}
-        <ul className="text-gray-900 flex space-x-6 text-sm ">
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            HOME
+        <div className="text-gray-900 flex space-x-6 text-sm">
+            <a href="" className='flex gap-1'>
+                <Image 
+                src="/assets/icons/lightening.svg"
+                width={20}
+                height={20}
+                alt='Black Tag Icon'/>
+                <h3>Deals Today</h3>
             </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            FEATURES
+            <a href="" className='flex gap-2'>
+                <Image 
+                src="/assets/icons/tag-black.svg"
+                width={15}
+                height={15}
+                alt='Black Tag Icon'/>
+                <h3>Special Prices</h3>
             </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            BEST SELLING
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            DEAL
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            SHOP
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            BLOG
-            </a>
-        </li>
-        <li>
-            <a href="#" className="hover:text-yellow-500">
-            PAGES
-            </a>
-        </li>
-        </ul>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+            <select>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+                <option className="hover:text-yellow-500">
+                Deals Today
+                </option>
+            </select>
+        </div>
 
         {/* Utility Icons */}
-        <div className="flex space-x-4 items-center text-gray-900">
-        <a
-            href="#"
-            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
-        >
-            <i className="bi bi-person"></i> Login or Register
-        </a>
-        <span>|</span>
-        <a
-            href="#"
-            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
-        >
-            <i class="bi bi-truck"></i> Track Your Order
-        </a>
-        <span>|</span>
-        <a
-            href="#"
-            className="hover:text-yellow-500 ease-in-out transform transition duration-500"
-        >
-            <i class="bi bi-mic-fill"></i> Hotline (+123) 813 822 8089
-        </a>
-        </div>
+        <button className="flex gap-2 items-center text-gray-900">
+            <Image 
+            src="assets/icons/rotate.svg"
+            alt='rotate icon'
+            width={20}
+            height={20} />
+            <h3>Recently Viewed</h3>
+        </button>
     </div>
   </div>
   )

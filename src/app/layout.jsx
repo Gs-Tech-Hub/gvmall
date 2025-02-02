@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Stora",
+  title: "GV Mall",
   description: "Shop From The Comfort Of Your Home",
 };
 
