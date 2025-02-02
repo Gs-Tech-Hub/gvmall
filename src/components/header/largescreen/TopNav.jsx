@@ -69,7 +69,7 @@ const Menu = () => {
                     height={30}
                     alt="Heart Icons" />
                 </button>
-                <button className="relative flex items-center">    
+                <button className="relative flex items-center">
                     <span className="absolute top-0 -right-2 bg-orange-500 text-xs rounded px-1 text-white">
                         1
                     </span>
@@ -79,7 +79,6 @@ const Menu = () => {
                         height={30}
                         alt="Heart Icons" />
                 </button>
-
                 <a href="#" className="flex gap-2 items-center">
                     <div className="relative">
                     <Image 
